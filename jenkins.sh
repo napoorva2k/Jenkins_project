@@ -7,5 +7,10 @@ pipeline {
 			url: 'https://github.com/napoorva2k/Jenkins_project.git'
 			}
 		}
+			stage ("Build_artifact") {
+			steps {
+			sh "mvn clean package"
+				}
+			}
 	}
 }
